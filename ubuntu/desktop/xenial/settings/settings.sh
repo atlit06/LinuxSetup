@@ -79,6 +79,7 @@ if [ "$answer" == "y" ]
     sudo apt-get -y remove gnome-sudoku
 fi
 
+unity-control-center mouse
 unity-control-center activity-log-manager
 unity-control-center display
 unity-control-center power

@@ -31,8 +31,10 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh atom
     ./$(dirname $0)/base/config.sh blueman
     ./$(dirname $0)/base/config.sh chrome
+    ./$(dirname $0)/base/config.sh curl
     ./$(dirname $0)/base/config.sh docker
     ./$(dirname $0)/base/config.sh franz
+    ./$(dirname $0)/base/config.sh gimp
     ./$(dirname $0)/base/config.sh git
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
@@ -40,7 +42,6 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh redshift
     ./$(dirname $0)/base/config.sh vlc
     ./$(dirname $0)/base/config.sh yarn
-    ./$(dirname $0)/base/config.sh gimp
 fi
 
 if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
@@ -51,8 +52,10 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh atom
     ./$(dirname $0)/base/install.sh blueman
     ./$(dirname $0)/base/install.sh chrome
+    ./$(dirname $0)/base/install.sh curl
     ./$(dirname $0)/base/install.sh docker
     ./$(dirname $0)/base/install.sh franz
+    ./$(dirname $0)/base/install.sh gimp
     ./$(dirname $0)/base/install.sh git
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
@@ -60,7 +63,6 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh redshift
     ./$(dirname $0)/base/install.sh vlc
     ./$(dirname $0)/base/install.sh yarn
-    ./$(dirname $0)/base/install.sh gimp
 
     sudo apt -y autoremove
 fi
