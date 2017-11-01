@@ -41,6 +41,7 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh python
     ./$(dirname $0)/base/config.sh redshift
     ./$(dirname $0)/base/config.sh vlc
+    ./$(dirname $0)/base/config.sh vscode
     ./$(dirname $0)/base/config.sh yarn
 fi
 
@@ -62,6 +63,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh python
     ./$(dirname $0)/base/install.sh redshift
     ./$(dirname $0)/base/install.sh vlc
+    ./$(dirname $0)/base/install.sh vscode
     ./$(dirname $0)/base/install.sh yarn
 
     sudo apt -y autoremove
