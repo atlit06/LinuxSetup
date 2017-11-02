@@ -32,6 +32,7 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh blueman
     ./$(dirname $0)/base/config.sh chrome
     ./$(dirname $0)/base/config.sh curl
+    ./$(dirname $0)/base/config.sh deluge
     ./$(dirname $0)/base/config.sh docker
     ./$(dirname $0)/base/config.sh dotnetcore
     ./$(dirname $0)/base/config.sh franz
@@ -55,6 +56,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh blueman
     ./$(dirname $0)/base/install.sh chrome
     ./$(dirname $0)/base/install.sh curl
+    ./$(dirname $0)/base/install.sh deluge
     ./$(dirname $0)/base/install.sh docker
     ./$(dirname $0)/base/install.sh dotnetcore
     ./$(dirname $0)/base/install.sh franz
