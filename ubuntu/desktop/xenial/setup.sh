@@ -38,6 +38,7 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh franz
     ./$(dirname $0)/base/config.sh gimp
     ./$(dirname $0)/base/config.sh git
+    ./$(dirname $0)/base/config.sh godot
     ./$(dirname $0)/base/config.sh golang
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
@@ -63,6 +64,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh franz
     ./$(dirname $0)/base/install.sh gimp
     ./$(dirname $0)/base/install.sh git
+    ./$(dirname $0)/base/install.sh godot
     ./$(dirname $0)/base/install.sh golang
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
