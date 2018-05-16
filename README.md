@@ -1,6 +1,6 @@
 # BitCrow
 An open source project that makes it easy to setup an Ubuntu Desktop development
-machine.
+machine using the latest LTS release currently [Bionic Beaver](https://www.ubuntu.com/desktop).
 
 ## Getting Started
 It's very easy to get started, simply fork the project and get started making
@@ -10,7 +10,6 @@ Running the setup script:
 ~~~~
 ./setup.sh config   // To configure the installers.
 ./setup.sh install  // Running the installers using configurations.
-./setup.sh settings // Open Ubuntu's settings windows for fast configuration.
 ./setup.sh all      // Run config, install and then settings.
 ~~~~
 
@@ -97,7 +96,6 @@ sudo echo "Starting Script!"
 
 chmod +x $(dirname $0)/base/config.sh
 chmod +x $(dirname $0)/base/install.sh
-chmod +x $(dirname $0)/settings/settings.sh
 
 if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
   then
@@ -126,15 +124,10 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     sudo apt -y autoremove
 fi
 
-if [ \( "$1" == "settings" \) -o \( "$1" == "all" \) ]
-  then
-    ./$(dirname $0)/settings/settings.sh
-fi
-
 echo "Script finished successfully!"
 
 exit 0
 ~~~~
 You can now run the setup.sh script and it should include your application.
-If you think other people would find your application useful please make a
+If you think other people would find your application useful you can make a
 pull request to the [BitCrow Repository](http://github.com/IronPeak/BitCrow),

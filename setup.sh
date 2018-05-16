@@ -27,13 +27,19 @@ chmod +x $(dirname $0)/base/install.sh
 
 if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
   then
+    ./$(dirname $0)/base/config.sh atom
+    ./$(dirname $0)/base/config.sh chrome
+    ./$(dirname $0)/base/config.sh curl
     ./$(dirname $0)/base/config.sh docker
+    ./$(dirname $0)/base/config.sh dotnetcore
+    ./$(dirname $0)/base/config.sh franz
     ./$(dirname $0)/base/config.sh git
-    ./$(dirname $0)/base/config.sh jenkins
+    ./$(dirname $0)/base/config.sh golang
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
-    ./$(dirname $0)/base/config.sh plex
     ./$(dirname $0)/base/config.sh python
+    ./$(dirname $0)/base/config.sh vlc
+    ./$(dirname $0)/base/config.sh vscode
     ./$(dirname $0)/base/config.sh yarn
 fi
 
@@ -42,13 +48,19 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     sudo apt-get -y update
     sudo apt-get -y upgrade
 
+    ./$(dirname $0)/base/install.sh atom
+    ./$(dirname $0)/base/install.sh chrome
+    ./$(dirname $0)/base/install.sh curl
     ./$(dirname $0)/base/install.sh docker
+    ./$(dirname $0)/base/install.sh dotnetcore
+    ./$(dirname $0)/base/install.sh franz
     ./$(dirname $0)/base/install.sh git
-    ./$(dirname $0)/base/install.sh jenkins
+    ./$(dirname $0)/base/install.sh golang
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
-    ./$(dirname $0)/base/install.sh plex
     ./$(dirname $0)/base/install.sh python
+    ./$(dirname $0)/base/install.sh vlc
+    ./$(dirname $0)/base/install.sh vscode
     ./$(dirname $0)/base/install.sh yarn
 
     sudo apt -y autoremove
